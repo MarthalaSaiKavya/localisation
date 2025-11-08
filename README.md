@@ -1,6 +1,5 @@
-# PF Localization – Project 3 (Deliverables 1 & 2)
+# PF Localization
 
-This package contains everything needed to submit Deliverable 1 (motion + sensor models) and Deliverable 2 (full particle filter) for Project 3. Use the instructions below to recreate the map/likelihood field artifacts and to run the complete localization stack in simulation.
 
 ---
 
@@ -33,7 +32,7 @@ All steps assume three host terminals attached to the same container.
 
 ---
 
-## Deliverable 1 Workflow
+## Workflow
 
 ### 1. Build the House Map
 Use three terminals as in Project 1:
@@ -66,7 +65,7 @@ Artifacts to include in the Deliverable 1 tarball:
 
 ---
 
-## Deliverable 2 Workflow – Particle Filter Localization
+## Workflow – Particle Filter Localization
 
 ### Option A: One-command bringup (spawns Gazebo + PF)
 1. **Terminal 1** – start the full stack (headless by default):
