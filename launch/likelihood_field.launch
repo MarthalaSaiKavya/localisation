@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="pf_localization" type="likelihood_field_node.py" name="likelihood_field" output="screen">
+    <param name="pkg_dir"  value="$(find pf_localization)"/>
+    <param name="map_yaml" value="$(find pf_localization)/maps/house_map.yaml"/>
+    <param name="out_png"  value="$(find pf_localization)/images/likelihood_field.png"/>
+  </node>
+</launch>

@@ -1,0 +1,15 @@
+<launch>
+  <arg name="gui" default="false"/>
+
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch">
+    <arg name="gui" value="$(arg gui)"/>
+  </include>
+
+  <node pkg="pf_localization" type="particle_filter_node.py" name="particle_filter" output="screen">
+    <param name="pkg_dir" value="$(find pf_localization)"/>
+    <param name="map_yaml" value="$(find pf_localization)/maps/house_map.yaml"/>
+    <param name="num_particles" value="800"/>
+    <param name="beam_step" value="6"/>
+    <param name="sigma_hit" value="0.25"/>
+  </node>
+</launch>

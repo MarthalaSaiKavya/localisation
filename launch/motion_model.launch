@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="pf_localization" type="motion_model_node.py" name="motion_model" output="screen"/>
+</launch>
